@@ -1,0 +1,29 @@
+/* CSS resets */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* accessibilityyyyy */
+html {
+    font-size: 100;
+}
+
+header {
+    padding: 3rem; 
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    color: #cad4cb;
+    background-color: #31101f;
+}
+header h1{
+    font-size: 3rem;
+}
+body{
+    margin-left: 2rem;
+    background-color: #eca2d3;
+    color: #31101f;
+    font-size: 1.5rem;
+    font-family:'Courier New', Courier, monospace;
+    line-height: 1.5;
+}
