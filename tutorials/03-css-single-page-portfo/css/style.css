@@ -1,3 +1,14 @@
+/* colors */
+:root{
+--light-bg: #ffb5dc; 
+--dark-bg: #073b4c;
+--accent-1: #ef476f;
+--accent-2: #ffd166;
+--accent-3: #06d6a0;
+--accent-4: #118ab2;
+--accent-5: #d853ed;
+}
+
 /* CSS resets */
 
 * {
@@ -7,52 +18,73 @@
 /* accessibilityyyyy */
 html {
     font-size: 100;
+    scroll-behavior: smooth;
 }
 
 header {
     padding: 3rem; 
     margin: auto;
-    color: #3b074b;
+    color: var(--dark-bg);
     text-align: center;
-    border-color: white;
+    border-color: var(--dark-bg);
     border-style: none none dotted none;
-    background: #ff75bf;
-    background: linear-gradient(90deg, rgba(255, 117, 191, 1) 0%, rgba(255, 250, 115, 1) 22%, rgba(141, 255, 110, 1) 48%, rgba(99, 255, 226, 1) 72%, rgba(216, 83, 237, 1) 100%);
+    background: var(--light-bg);
+    background: linear-gradient(90deg, var(--accent-1) 0%, var(--accent-2) 22%, var(--accent-3) 48%, var(--accent-4) 72%, var(--accent-5) 100%);
 }
 header h1 {
     font-size: 5rem;
 }
 nav a{ 
 padding: 1rem;
+color: var(--dark-bg);
+transition: all 1 ease;
 }
+
+nav a:hover{
+    border-radius: 2rem;
+    background-color: var(--dark-bg);
+    color: var(--light-bg);
+}
+
 main {
     margin: 4rem;
     text-align: center;
 }
 body{
-    background-color: #ffb0dc;
-    color: #3b074b;
+    background-color: var(--light-bg);
+    color: var(--dark-bg);
     font-size: 1.5rem;
     font-family:'Courier New', Courier, monospace;
     line-height: 1.5;
 }
+
 h2{
     font-size: 3rem;
 }
+
+.about-section h2:hover{
+    border-radius: 2rem;
+    background-color: var(--accent-1);
+}
+
 h3{
     font-size: 1rem;
 }
+
 .about-section, .portfolio-section, .contact-section{ 
     margin-bottom: 3rem;
 }
+
 img{
     max-width: 100%;
     height: auto;
-    box-shadow: 0px 10px 13px -7px #000000, 0px 5px 15px 5px rgba(59,7,75,0.75);
+    box-shadow: 0px 10px 13px -7px var(--dark-bg), 0px 5px 15px 5px var(--accent-5);
 }
+
 footer{
     text-align: right;
 }
+
 footer p {
     font-size: 1rem;
 }
