@@ -67,3 +67,21 @@ body{
     0%{width:100px}
     100%{width:100vw}
 }
+.rude{
+    animation: slide 1s infinite alternate;
+}
+
+@keyframes slide{
+    0%{text-align: left;}
+    50%{text-align: center;}
+    100%{text-align: right;}
+}
+
+img{
+    opacity:0%;
+    transition: opacity 1.5s;
+}
+
+img:hover{
+    opacity: 100%;
+}
