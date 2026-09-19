@@ -9,6 +9,12 @@
 --accent-5: #d853ed;
 }
 
+.comic-neue-regular {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* CSS resets */
 
 * {
@@ -33,11 +39,45 @@ header {
 }
 header h1 {
     font-size: 5rem;
+    font-family: "Sarina", cursive;
 }
+
+@media (max-width:525px) {
+    header h1{
+        font-size: 4rem;
+    }
+}
+
+.container nav a {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+nav ul{
+list-style-type: none;
+}
+nav li{
+    display: inline-block;
+}
+
+
+@media(max-width: 525px) {
+    nav a{
+        font-size: 1.25rem;
+    }
+}
+
+@media(max-width: 450px) {
+    nav a{
+        font-size: 1rem;
+    }
+}
+
 nav a{ 
 padding: 1rem;
 color: var(--dark-bg);
-transition: all 1 ease;
+transition: all 1s ease;
 }
 
 nav a:hover{
@@ -45,13 +85,10 @@ nav a:hover{
     background-color: var(--dark-bg);
     color: var(--light-bg);
 }
-
-@media (max-width:800px){
-    nav a{
-        font-size: 1rem;
-        padding: 0 3rem;
+@media(max-width:940px) {
+    nav li{
+        padding: .5rem;
     }
-    
 }
 
 main {
@@ -62,17 +99,24 @@ body{
     background-color: var(--light-bg);
     color: var(--dark-bg);
     font-size: 1.5rem;
-    font-family:'Courier New', Courier, monospace;
+    font-family: "Comic Neue", cursive;
     line-height: 1.5;
+}
+@media (max-width:550px){
+    body{
+        font-size: 1rem;
+    }
 }
 
 h2{
     font-size: 3rem;
+    font-family: "Arvo", serif;
 }
 
-.about-section h2:hover{
-    border-radius: 2rem;
-    background-color: var(--accent-1);
+@media(max-width: 525px){
+    h2{
+        font-size: 2rem;
+    }
 }
 
 h3{
