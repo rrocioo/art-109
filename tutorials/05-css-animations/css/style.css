@@ -1,8 +1,27 @@
+body{
+    background-color:#e970e9;
+    animation: change-color 5s infinite;
+}
+@keyframes change-color{
+    10%{background-color: #e970e9;}
+    20%{background-color: #77b4fa;}
+    40%{background-color: #99e989;}
+    60%{background-color: #fae883;}
+    80%{background-color: #f78f52;}
+    100%{background-color: rgb(230, 79, 142);}
+}
+
 
 .title{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     font-size: 4rem;
+    animation: skew 10s  infinite alternate;
+}
+
+@keyframes skew{
+    0%{transform: skew(-15deg, -45deg);}
+    100%{transform: skew(45deg, 15deg);}
 }
 
 .square{
@@ -16,7 +35,7 @@
 
 .square:hover{
     background-color: aqua;
-    transform: rotate(45deg);
+    transform: rotate(720deg);
 }
 
 .button-div{
@@ -36,4 +55,15 @@
 .button:hover{
     background-color: #66e04d;
     transform:scale(1.5);
+}
+
+.loading-zone{
+    color: white;
+    background-color: black;
+    animation: stretch 5s infinite alternate;
+}
+
+@keyframes stretch{
+    0%{width:100px}
+    100%{width:100vw}
 }
