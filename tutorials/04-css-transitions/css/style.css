@@ -1,0 +1,39 @@
+
+.title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.square{
+    background-color: palevioletred;
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    margin:50px auto;
+    transition: all 1s;
+}
+
+.square:hover{
+    background-color: aqua;
+    transform: rotate(45deg);
+}
+
+.button-div{
+    text-align: center;
+}
+
+.button{
+    background-color: #9eafaa;
+    color:black;
+    text-decoration: none;
+    padding:20px;
+    border-radius: 15px;
+    display: inline-block;
+    transition: all .5s;
+}
+
+.button:hover{
+    background-color: #66e04d;
+    transform:scale(1.5);
+}
