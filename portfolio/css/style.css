@@ -8,6 +8,23 @@
 --accent-4: #87e752;
 }
 
+/* might have to replace this tbd */
+@font-face{
+    font-family: Monograph;
+    src:url(../fonts/monograph-Regular.ttf);
+}
+
+@font-face {
+    font-family: Chistoso;
+    src:url(../fonts/Chistoso-Regular.ttf);
+}
+
+@font-face {
+    font-family: Angelina;
+    src:url(../fonts/angelina.TTF);
+}
+
+
 
 /* CSS resets */
 *,
@@ -41,6 +58,14 @@ body{
 header h1{
     color: var(--light);
     text-decoration: none;
+    font-family: Chistoso;
+    font-size: 5rem;
+    padding: 2rem;
+}
+
+footer{
+    font-family: Angelina;
+    font-size: 1.5rem;
 }
 
 footer img{
