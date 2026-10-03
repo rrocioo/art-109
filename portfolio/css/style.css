@@ -63,6 +63,18 @@ header h1{
     padding: 2rem;
 }
 
+nav a{
+    text-decoration: none;
+    color: var(--light);
+}
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
 footer{
     font-family: Angelina;
     font-size: 1.5rem;
