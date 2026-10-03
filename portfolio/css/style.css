@@ -33,6 +33,16 @@ html {
 
 /* general css */
 
+body{
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+header h1{
+    color: var(--light);
+    text-decoration: none;
+}
+
 footer img{
     display: inline;
     max-width: 64px;
