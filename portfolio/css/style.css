@@ -1,0 +1,48 @@
+/* colors and styles */
+:root{
+--light: #ffb5dc; 
+--dark: #18020e;
+--accent-1: #6b0f1a;
+--accent-2: #b91372;
+--accent-3: #fa198b;
+--accent-4: #87e752;
+}
+
+
+/* CSS resets */
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+/* accessibilityyyyy */
+html {
+    font-size: 100;
+    scroll-behavior: smooth;
+}
+
+/* general css */
+
+footer img{
+    display: inline;
+    max-width: 64px;
+}
+
+
+/* flex styling */
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
