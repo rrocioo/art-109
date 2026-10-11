@@ -69,6 +69,7 @@ body{
 header{
     background: var(--accent-1);
     background: linear-gradient(90deg, var(--accent-1) 0%, var(--accent-2) 29%, var(--accent-3) 50%, var(--accent-4) 75%, var(--accent-5) 100%);
+    border-bottom: var(--txt) dotted .4rem;
 }
 
 header h1{
