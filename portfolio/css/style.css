@@ -1,11 +1,22 @@
 /* colors and styles */
 :root{
---light: #ffb5dc; 
---dark: #18020e;
---accent-1: #6b0f3d;
---accent-2: #b91358;
---accent-3: #fa198b;
---accent-4: #87e752;
+--txt: #FFD4EB; 
+--bg: #18020e;
+--accent-1: #C2095A;
+--accent-2: #F71735;
+--accent-3: #EB921E;
+--accent-4: #8C782E;
+--accent-5: #090446;
+}
+
+body.light{
+--txt: #18020e; 
+--bg:#FFD4EB;
+--accent-1: #FA0079;
+--accent-2: #EE6123;
+--accent-3: #FFCF00;
+--accent-4: #88D18A;
+--accent-5: #2274A5;
 }
 
 /* might buy the thing for this later */
@@ -51,25 +62,39 @@ html {
 /* general css */
 
 body{
-    color: var(--light);
-    background-color: var(--dark);
+    color: var(--txt);
+    background-color: var(--bg);
 }
 
 header{
-    background-color: var(--dark);
+    background: var(--accent-1);
+    background: linear-gradient(90deg, var(--accent-1) 0%, var(--accent-2) 29%, var(--accent-3) 50%, var(--accent-4) 75%, var(--accent-5) 100%);
 }
 
 header h1{
-    color: var(--light);
+    color: var(--txt);
     text-decoration: none;
     font-family: Chistoso;
     font-size: 5rem;
-    padding: 2rem 4rem;
+    padding: 2rem 4rem 0 4rem;
+}
+
+.nav-brand{
+    padding: 1rem;
+}
+
+.button{
+  margin: 0 5rem; 
+  border: var(--accent-5);
+  border-radius: .5rem;
+  padding: .4rem;
+  color:var(--txt);
+  background-color: var(--accent-5);
 }
 
 nav a{
     text-decoration: none;
-    color: var(--light);
+    color: var(--txt);
 }
 
 .nav-menu{
@@ -87,7 +112,25 @@ main h1{
     margin: 5rem;
 }
 
+main h2{
+    padding: 1rem;
+}
+
+.portfolio-item img{
+    position: relative;
+    max-height: 500px;
+    box-shadow: 10px 10px 3px var(--accent-4);
+    bottom: 0px;
+    transition: ease 0.3s
+}
+
+.portfolio-item img:hover{
+    bottom: 8px;
+    box-shadow: 10px 10px 15px 8px var(--accent-4);
+}
+
 footer{
+    padding: 0 1rem;
     font-family: Angelina;
     font-size: 1.5rem;
 }
