@@ -109,6 +109,7 @@ nav a{
 
 main{
     margin: 2rem;
+    text-align: center;
 }
 
 main h1{
@@ -117,6 +118,15 @@ main h1{
 
 main h2{
     padding: 1rem;
+}
+
+.about-me{
+    margin: 1rem;
+}
+
+.about-me img{
+    max-width: 540px;
+    margin: 1rem;
 }
 
 .portfolio-item img{
@@ -131,6 +141,8 @@ main h2{
     bottom: 8px;
     box-shadow: 10px 10px 15px 8px var(--accent-4);
 }
+
+
 
 .resume h1{
     font-size: 2.5rem;
@@ -185,10 +197,6 @@ footer img{
 
 /* flex styling */
 
-.resume{
-    display: flex;
-    justify-content: space-around;
-}
 
 .flex-container{
     display: flex;
@@ -211,3 +219,34 @@ footer img{
 .flex-item-grid-spex{
     flex: 0 1 50%
 }
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.animation-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reel-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.resume{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
