@@ -82,6 +82,26 @@ header h1{
     transition: ease 0.3s;
 }
 
+@media (max-width:940px){
+    header h1{
+        font-size: 4rem;
+    }
+}
+
+
+@media (max-width:600px){
+    header h1{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:500px){
+    header h1{
+        font-size: 2.5rem;
+    }
+}
+
+
 .nav-brand{
     padding: 1rem;
 }
@@ -112,11 +132,49 @@ main{
     text-align: center;
 }
 
+@media(max-width:600px){
+    main{
+        margin: 0 2rem;
+    }
+}
+
+@media(max-width:400px){
+    main{
+        margin: 0 1.5rem;
+    }
+}
+
+
 main h1{
     margin: 5rem;
 }
 
+@media(max-width: 600px){
+    main h1{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 500px){
+    main h1{
+        font-size: 2rem;
+    }
+}
+
+
 main h2{
+    padding: 1rem;
+}
+
+@media(max-width: 600px){
+    main h2{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
+
+
+main h3{
     padding: 1rem;
 }
 
@@ -129,9 +187,15 @@ main h2{
     margin: 1rem;
 }
 
+@media(max-width: 630px){
+    .about-me img{
+        max-width: 270px;
+    }
+}
+
 .portfolio-item img{
     position: relative;
-    max-height: 500px;
+    max-height: 400px;
     box-shadow: 10px 10px 3px var(--accent-4);
     bottom: 0px;
     transition: ease 0.3s
@@ -142,7 +206,18 @@ main h2{
     box-shadow: 10px 10px 15px 8px var(--accent-4);
 }
 
+.poster-item img{
+    position: relative;
+    max-height: 400px;
+    box-shadow: 7px 7px 3px var(--accent-3);
+    bottom: 0px;
+    transition: ease 0.3s
+}
 
+.poster-item img:hover{
+    bottom: 8px;
+    box-shadow: 7px 7px 15px 8px var(--accent-3);
+}
 
 .resume h1{
     font-size: 2.5rem;
@@ -171,6 +246,11 @@ main h2{
 .tools h3{
     font-size: 1.3rem;
     margin-top: 1rem;
+}
+
+video{
+    max-width: 30%;
+    box-shadow: 5px 5px 3px var(--accent-2);
 }
 
 .contact-section{
@@ -202,6 +282,13 @@ footer img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 850px){
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .flex-container-grid{
