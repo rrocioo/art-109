@@ -5,3 +5,16 @@
     top: 275px;
     left:475px;
 }
+
+.expo{
+    position: relative;
+    max-width: 600px;
+    left: 800px;
+    top: 69px;
+}
+
+.expoimg{
+    position:absolute;
+    top: 175px;
+    left: 125px;
+}
