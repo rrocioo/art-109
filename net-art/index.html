@@ -8,14 +8,21 @@
 </head>
 <body>
     <div class="main-container">
-        <img class="main-img" src="" alt="closed eyes">
+        <img class="main-img" src="images/eyes-closed.png" alt="closed eyes">
         <div id="wake-up">
             <p>Wake Up</p>
             <button id="change-main-img">Okay.</button>
         </div>
     </div>
-    <div id="bed" class="pop-up-1">
+    <div hidden id="bedup" class="pop-up">
             <header class="pop-up-header">Stay in bed?</header>
+            <button id="backToBed">Yes</button>
+            <button id="wakeUp">No</button>
+    </div>
+    <div hidden id="areUSure" class="pop-up">
+        <header class="pop-up-header">Are you sure?</header>
+        <button id="wakeUp">Yes</button>
+        <button id="backToBed">No</button>
     </div>
     <script src="js/main.js"></script>
 </body>

@@ -45,18 +45,19 @@ body{
     text-align: center;
 }
 
-.pop-up-1{
-   height: 250px;
-   width: 400px; 
-   background-color: var(--color-2);
-   border: solid var(--text);
-   flex-direction: column;
+.pop-up{
+    height: 200px;
+    width: 375px; 
+    background-color: var(--bg);
+    border: solid var(--text);
+    position: absolute;
 }
 
 .pop-up-header{
    background-color: var(--text); 
    color: var(--bg);
    padding: 10px;
+   text-align: center;
 }
 
 button{
@@ -66,4 +67,26 @@ button{
     color: var(--bg);
     border: solid var(--color-2);
     border-radius: 1rem;
+    text-align: center;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* pop ups */
+
+#bedup{
+    top: 200px;
+}
+
+#bedup button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#areUSure{
+    top: 200px;
+    right: 75px;
 }
