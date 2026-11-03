@@ -56,8 +56,9 @@ body{
 .pop-up-header{
    background-color: var(--text); 
    color: var(--bg);
-   padding: 10px;
+   padding: 2rem;
    text-align: center;
+   font-size: 1.5rem;
 }
 
 button{
@@ -76,17 +77,18 @@ button:hover{
 
 /* pop ups */
 
+.flex-pop{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3rem;
+}
+
 #bedup{
     top: 200px;
 }
 
-#bedup button{
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
 #areUSure{
-    top: 200px;
-    right: 75px;
+    top: 350px;
+    right: 150px;
 }

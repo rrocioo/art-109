@@ -1,11 +1,11 @@
 //html elements
 const eyes = document.querySelector(".main-img")
 const changeMainImg = document.querySelector("#change-main-img")
-const bed = document.querySelector("#bedup")
-const backToBed = document.querySelector("#backToBed")
+const backToBed = document.querySelector(".sleep")
 const wakeUp = document.querySelector("#wakeUp")
-const allPop = document.querySelectorAll(".pop-up")
+const bed = document.querySelector("#bedup")
 const rUSure = document.querySelector("#areUSure")
+
 
 //change main image
 changeMainImg.addEventListener("click", () => {
@@ -14,16 +14,15 @@ changeMainImg.addEventListener("click", () => {
     bed.removeAttribute("hidden");
 })
 
-backToBed.addEventListener("click", () => {
-    eyes.src = "images/eyes-closed.png";
-    eyes.alt = "closed eyes";
-    allPop.setAttribute("hidden");
-})
 
 wakeUp.addEventListener("click", () => {
     rUSure.removeAttribute("hidden");
 })
 
-
-
+backToBed.addEventListener("click", () => {
+    eyes.src = "images/eyes-closed.png";
+    eyes.alt = "closed eyes";
+    bed.setAttribute("hidden", "true");
+    rUSure.setAttribute("hidden", "true");
+})
 
